@@ -36,9 +36,12 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">订单管理 <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{route('order.index')}}"><span style="color: #e38d13;">总</span>订单统计报表</a></li>
-                            <li><a href="{{route('order.indexd')}}"><span style="color: #0066cc;">今日</span>订单统计报表</a></li>
-                            <li><a href="{{route('order.indexm')}}"><span style="color: #e38d13;">月</span>订单统计报表</a></li>
+                            <li><a href="{{route('order.week')}}"><span style="color: #e38d13;">周</span>订单统计报表</a></li>
+                            <li><a href="{{route('menus.week')}}"><span style="color: #e38d13;">周</span>菜品销量统计报表</a></li>
+                            <li><a href="{{route('order.month')}}"><span style="color: #009900;">月</span>订单统计报表</a></li>
+                            <li><a href="{{route('menus.month')}}"><span style="color: #009900;">月</span>菜品销量统计报表</a></li>
+
+
                         </ul>
                     </li>
                     @endauth

@@ -38,8 +38,11 @@ Route::resource('menu','MenuController');
 //活动
 Route::resource('activity','ActivityController');
 //订单
-Route::resource('order','OrderController');
-//日统计订单
-Route::get('order.indexd','OrderController@indexd')->name('order.indexd');
-//月统计订单
-Route::get('order.indexm','OrderController@indexm')->name('order.indexm');
+//一周订单统计
+Route::get('order/week','TongJiController@order_week')->name('order.week');
+//一周菜品销量统计
+Route::get('menus/week','TongJiController@menu_week')->name('menus.week');
+//近三月订单统计
+Route::get('order/month','TongJiController@order_month')->name('order.month');
+//近三月菜品销量统计
+Route::get('menus/month','TongJiController@menu_month')->name('menus.month');
